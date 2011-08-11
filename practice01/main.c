@@ -8,11 +8,13 @@
 
 #include <stdio.h>
 
-int main (int argc, const char * argv[])
+int main(void)
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+	char str[16];
+	char str1[12] = "DRAGON";
+	char str2[] = "QUEST";
+	int i = 3;
+	sprintf(str,"%s%s%d\n",str1,str2,i);
+	printf(str);
+	return 0;
 }
-
